@@ -1,4 +1,4 @@
-import React from 'react'
+// import React from 'react'
 import './Hero.css'
 
 const Hero = () => {
@@ -7,7 +7,7 @@ const Hero = () => {
     <div className="hero">
         <div className="hero-section">
           <div className="hero-left">
-            <div className="hero-title">India's Leading Restaurant</div>
+            <div className="hero-title">{`India's Leading Restaurant`}</div>
             <div className="hero-description">
               Welcome to YummyBites, where every bite tells a story of passion and
               perfection. Our hero section unfolds a symphony of freshly baked

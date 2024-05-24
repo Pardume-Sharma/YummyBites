@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useContext } from "react";
+import  { useState, useEffect, useContext } from "react";
 import "./Navbar.css";
 import { assets } from "../../assets/assets.js";
 import { Link } from "react-router-dom";
@@ -8,7 +8,7 @@ import { StoreContext } from "../context/StoreContext.jsx";
 const Navbar = ({setShowLogin}) => {
   const [menu, setMenu] = useState("Home");
 
-  const {getTotalAmount,cartItems} = useContext(StoreContext);
+  const {getTotalAmount} = useContext(StoreContext);
 
   const [darkMode, setDarkMode] = useState(
     localStorage.getItem("mode") === "dark"

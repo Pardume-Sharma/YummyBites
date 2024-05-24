@@ -1,7 +1,7 @@
-import React, { useContext } from 'react'
+import { useContext } from 'react'
 import './Order.css'
 import { StoreContext } from '../../components/context/StoreContext';
-import { Navigate } from 'react-router-dom';
+// import { Navigate } from 'react-router-dom';
 import { assets } from '../../assets/assets';
 
 const Order = () => {

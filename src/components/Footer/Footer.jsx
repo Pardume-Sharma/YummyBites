@@ -1,10 +1,10 @@
-import React from 'react'
-import './Footer.css'
+// import React from 'react'
+import "./Footer.css";
 
-const Footer = () => {
+export default function Footer() {
   return (
     <>
-           <div className="updates" id='about'>
+      <div className="updates" id="about">
         <form action="https://api.web3forms.com/submit" method="POST">
           <input
             type="hidden"
@@ -27,34 +27,58 @@ const Footer = () => {
 
         <p className="update-head">Get Ready for the Updates!</p>
       </div>
-    <footer className="footer" id="ftr">
-      <div className="col">
-        <a href="index.html" className="ftr-links">Home</a>
-        <a href="#service" className="ftr-links">Services</a>
-        <a href="#factor" className="ftr-links">X-Factor</a>
-        <a href="#feed" className="ftr-links">Feedback</a>
-      </div>
-      <div className="col">
-        <a href="" className="ftr-links"
-          ><i className="fa-square-facebook"></i>Instargram</a
-        >
-        <a href="" className="ftr-links">Whatsapp</a>
-        <a href="" className="ftr-links">Facebook</a>
-      </div>
-      <div className="col">
-        <a href="#services" className="ftr-links">Cakes</a>
-        <a href="#services" className="ftr-links">Pasteries</a>
-        <a href="#services" className="ftr-links">Cookies</a>
-        <a href="#services" className="ftr-links">Buns</a>
-      </div>
-      <div className="col">
-        <a href="tel: +91" className="ftr-links">Call Us</a>
-        <a href="mailto:" className="ftr-links">Mail Us</a>
-        <a href="" className="ftr-links">Reach Us</a>
-      </div>
-    </footer>
+      <footer className="footer" id="ftr">
+        <div className="col">
+          <a href="index.html" className="ftr-links">
+            Home
+          </a>
+          <a href="#service" className="ftr-links">
+            Services
+          </a>
+          <a href="#factor" className="ftr-links">
+            X-Factor
+          </a>
+          <a href="#feed" className="ftr-links">
+            Feedback
+          </a>
+        </div>
+        <div className="col">
+          <a href="" className="ftr-links">
+            <i className="fa-square-facebook"></i>Instargram
+          </a>
+          <a href="" className="ftr-links">
+            Whatsapp
+          </a>
+          <a href="" className="ftr-links">
+            Facebook
+          </a>
+        </div>
+        <div className="col">
+          <a href="#services" className="ftr-links">
+            Cakes
+          </a>
+          <a href="#services" className="ftr-links">
+            Pasteries
+          </a>
+          <a href="#services" className="ftr-links">
+            Cookies
+          </a>
+          <a href="#services" className="ftr-links">
+            Buns
+          </a>
+        </div>
+        <div className="col">
+          <a href="tel: +91" className="ftr-links">
+            Call Us
+          </a>
+          <a href="mailto:" className="ftr-links">
+            Mail Us
+          </a>
+          <a href="" className="ftr-links">
+            Reach Us
+          </a>
+        </div>
+      </footer>
     </>
-  )
+  );
 }
-
-export default Footer

@@ -1,4 +1,4 @@
-import React from 'react'
+// import React from 'react'
 import section2 from '../../assets/section2.png'
 import '../global.css'
 
