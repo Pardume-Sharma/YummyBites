@@ -15,7 +15,7 @@ const FoodDisplay = ({ category }) => {
                         if (category === "All" || category === item.category) {
                             return (
                                 <FoodItem
-                                    key={item._id}  // Use _id for unique keys instead of index
+                                    key={item._id}
                                     id={item._id}
                                     name={item.name}
                                     description={item.description}
