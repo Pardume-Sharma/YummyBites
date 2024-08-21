@@ -31,7 +31,7 @@ const StoreContextProvider = (props) => {
             await axios.post(url+"/api/cart/add",{itemId},{headers:{token}})
         }
     };
-    const [food_list, setFoodList] = useState([]);
+    // const [food_list, setFoodList] = useState([]);
 
     useEffect(() => {
     async function loadData(){
