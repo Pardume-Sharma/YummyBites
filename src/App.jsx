@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Navbar from './components/Navbar/Navbar';
+import FoodDisplay from './components/FoodDisplay/FoodDisplay';
 import { Routes, Route } from 'react-router-dom';
 import Home from './Pages/Home/Home';
 import Cart from './Pages/Cart/Cart';
@@ -26,6 +27,7 @@ const App = () => {
           <Route path='/myorders' element={MyOrders}/>
           
         </Routes>
+        <FoodDisplay/>
         <Footer/>
       </div>
     </>
