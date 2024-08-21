@@ -13,6 +13,8 @@ const StoreContextProvider = (props) => {
             setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] + 1 }));
         }
     };
+    // const [food_list, setFoodList] = useState([]);
+
 
     const removeFromCart = (itemId) => {
         if (cartItems[itemId] && cartItems[itemId] > 1) {
