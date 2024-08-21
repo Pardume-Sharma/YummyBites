@@ -1,6 +1,6 @@
 .hero{
     z-index: -1;
-    background: url('../../assets/hero-bg.jpg');
+    background: url('../../assets/hero-bg.webp');
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -33,7 +33,6 @@
         transform: translateX(0);
     }
 }
-
 .hero-section{
     display: flex;
     flex-direction: column;
@@ -49,8 +48,7 @@
         padding: 0 auto;
         gap: 1rem;
         width: 50%;
-        animation: .5s ltor linear;
-        
+        animation: .5s ltor linear;       
         .hero-title{
             font-size: 3.5rem;
             font-weight: 600;

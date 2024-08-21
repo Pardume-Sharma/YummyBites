@@ -1,0 +1,172 @@
+.factors{
+display: flex;
+gap: 1rem;
+align-items: center;
+justify-content: center;
+background: var(--special-color);
+padding-bottom: 7rem;
+}
+.factors:hover{
+    .right-box .content{
+        animation: .5s right-animation;
+        -webkit-animation: .5s right-animation;
+}
+    .left-box .content{
+        animation: .5s linear left-animation;
+        -webkit-animation: .5s linear left-animation;
+}    
+}
+.left-factor,.right-factor{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+}
+.left-factor{
+    margin-top: 3.5rem;
+}
+.left-box{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    text-align: right;
+    height: 5rem;
+    width: 300px;
+    margin: 2rem;
+
+    & .number{
+        position: absolute;
+        right: 0;
+        top: -2rem;
+    }
+        
+}
+.right-box{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 5rem;
+    margin: 2rem;
+    text-align: left;
+    
+    & .number{
+        position: relative;
+        height: 2rem;
+        width: 2rem;
+    }
+    
+}
+.number{
+    margin-bottom: 2%;
+    height: 2rem;
+    aspect-ratio: 1;
+    text-align: center;
+    background: var(--primary-color);
+    border-radius: 50%;
+    color: var(--hover-color);
+    font-size: 1.5rem;
+    font-weight: bold;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.head{
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+.content{
+    font-size: 1rem;
+
+}
+.middle-factor{
+    background: #000;
+    height: 15rem;
+    aspect-ratio: 1;
+    position: relative;
+    top: 4rem;
+    display: flex;
+    position: relative;
+    align-items: center;
+    .back{
+        object-fit: cover;
+        position: absolute;
+        height: 15rem;
+    }
+    & img{
+        border-radius: 10px;
+        height: 100%;
+        width: 100%;
+    }
+}
+
+@media (width<=925px) and (width>=768px)
+{
+    .factors{
+        margin-top: 10rem;
+        gap: 0rem;
+    }
+    .number{
+        align-self: left;
+    }
+    .left-box{
+        position: absolute;
+        left : 4%;
+        text-align: left;
+    }
+    .middle-factor{
+        top: 0rem;
+        margin: 0rem;
+    }
+    .content{
+        font-size:.9rem ;
+    }
+}
+@media (width<=768px)
+{
+    .factors{
+        flex-direction: column;
+        gap: 5rem;
+    }
+    .number{
+        position: absolute;
+        left:4%;
+        align-self: left;
+    }
+    .left-box{
+        text-align: left;
+    }
+    .middle-factor{
+        top: 0rem;
+        margin: 0rem;
+    }
+    .right-factor,.left-factor{
+        gap: 5rem;
+    }
+}
+
+
+@keyframes left-animation {
+    0%{
+        opacity: .5;
+        translate: -100% 0%;
+    }
+    100%{
+        opacity: 1;
+        translate: 0% 0%;
+    }
+}
+
+
+@keyframes right-animation{
+    0%{
+        opacity: .5;
+        translate: 100% 0%;
+    }
+    100%{
+        opacity: 1;
+        translate: 0% 0%;
+    }
+}
+

@@ -7,6 +7,7 @@ body.addEventListener('mousemove', (dets)=>{
 })
 
 
+
 let mode = document.querySelector('.mode');
 let ball = document.querySelector('.ball');
 mode.addEventListener('click', ()=>{

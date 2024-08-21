@@ -68,13 +68,13 @@ export default function Footer() {
           </a>
         </div>
         <div className="col">
-          <a href="tel: +91" className="ftr-links">
+          <a href="tel: +91 7973789157" className="ftr-links">
             Call Us
           </a>
-          <a href="mailto:" className="ftr-links">
+          <a href="mailto:linkinpardume07@gmail.com" className="ftr-links">
             Mail Us
           </a>
-          <a href="" className="ftr-links">
+          <a href="Sangrur,Punjab" className="ftr-links">
             Reach Us
           </a>
         </div>

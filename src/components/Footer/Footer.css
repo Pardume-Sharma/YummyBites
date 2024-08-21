@@ -21,8 +21,7 @@
 }
 .form-box:active{
     border: none;
-    outline: 0;
-    
+    outline: 0;    
 }
 .footer
 {
@@ -49,7 +48,7 @@
         
         &:hover{
             transition: .4s linear;
-            color: var(--white-color);
+            color:white;
             translate: 50% 0px;
         }
     }

@@ -1,21 +1,23 @@
 .order{
-    width: 75%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    margin: 0 auto;
+    justify-content: center;
     margin-top: 10rem;
     gap: 2rem;
     color: var(--black-color);
 }
+@media (width<=1024px) {
+    .order{
+        flex-direction: column;
+    }
+}
 .place-order{
     border: 1px solid var(--black-color);
-    background: var(--white);
-    width: 100%;
     display: flex;
-    padding-right: 20rem;
-    gap: 1rem;
     flex-direction: column;
+    align-content: center;
+    gap: 1rem;
+    background: var(--white-color);
     & p{
         color: var(--black-color);
         font-size: 1.5rem;
@@ -24,25 +26,35 @@
     }
 }
 input{
+    border-radius: .1rem;
     padding: .4rem .5rem;
-    &:active{
-        outline: red;
-    }
+    width: 15rem;
+    -webkit-border-radius: .1rem;
+    -moz-border-radius: .1rem;
+    -ms-border-radius: .1rem;
+    -o-border-radius: .1rem;
 }
 
 .left{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    margin: 0 5%;
     gap: 1rem;
 }
 .right{
     display: grid;
-    align-items: center;
-    width: 30rem;
+    place-items: center;
+    width: 100%;
 }
 .fields{
     display: flex;
     gap: 1rem;
+}
+@media (width<=1024px) {
+    .fields{
+        flex-direction: column;
+    }
 }
 .buy{
     position: absolute;
@@ -57,8 +69,7 @@ input{
     margin-left: 10%;
     gap: 1rem;
     color: var(--black-color);
-    /*background: rgba(53, 53, 53, 0.64);
-    */animation: fadeIn .5s;
+    animation: fadeIn .5s;
     -webkit-animation: fadeIn .5s;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;

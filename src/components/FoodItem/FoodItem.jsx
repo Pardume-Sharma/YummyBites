@@ -5,7 +5,7 @@ import { StoreContext } from "../context/StoreContext";
 
 const FoodItem = ({ id, name, price, description, image }) => {
   const [isFavorite, setIsFavorite] = useState(false);
-  const { cartItems, addToCart, removeFromCart } = useContext(StoreContext);
+  const { cartItems, addToCart, removeFromCart,url } = useContext(StoreContext);
 
   useEffect(() => {
     const likedItems = JSON.parse(localStorage.getItem("likedItems")) || {};
@@ -20,11 +20,10 @@ const FoodItem = ({ id, name, price, description, image }) => {
     localStorage.setItem("likedItems", JSON.stringify(updatedLikedItems));
     setIsFavorite(!isFavorite);
   };
-
   return (
     <div className="food-item">
       <div className="food-item-box">
-        <img src={image} alt="" className="food-img" />
+        <img src={url+"/images/"+image} alt="" className="food-img" />
       </div>
       {cartItems[id] ? (
         <div className="bar">
